@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script> -->
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <style>
+        .base {
+            --highlighted-line-bg: #d1e3c9;
+            --highlighted-line-bg-dark: #264b33;
+            --cnblogs-toc-bg-color: rgba(245, 245, 245, .98);
+            --cnblogs-toc-highlight-color: rgba(255, 255, 255, .9);
+            --cnblogs-toc-color: #000;
+            --olcb-folder-code-block-max-height: 80vh;
+            color: #000;
+            font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+            text-align: left;
+            font-size: 12px;
+            word-wrap: break-word;
+            margin: 0;
+            height: 9em;
+            padding: 3em;
+            width: 9em;
+            transform: rotateX(45deg) rotateZ(45deg);
+            transform-style: preserve-3d;
+        }
+
+        .cube {
+            --highlighted-line-bg: #d1e3c9;
+            --highlighted-line-bg-dark: #264b33;
+            --cnblogs-toc-bg-color: rgba(245, 245, 245, .98);
+            --cnblogs-toc-highlight-color: rgba(255, 255, 255, .9);
+            --cnblogs-toc-color: #000;
+            --olcb-folder-code-block-max-height: 80vh;
+            color: #000;
+            font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+            text-align: left;
+            font-size: 12px;
+            word-wrap: break-word;
+            margin: 0;
+            padding: 0;
+            content: '';
+            float: left;
+            height: 3em;
+            width: 3em;
+            background-color: #05afd1;
+            position: relative;
+            transform: translateZ(3em);
+            transform-style: preserve-3d;
+            transition: .25s;
+            box-shadow: 10em 10em 1.5em rgba(0, 0, 0, 0.1);
+            animation: anim 1s infinite;
+            animation-delay: 0.05s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="base">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+
+    <div id="jsi-flying-fish-container" class="container"><canvas width="561" height="282"></canvas></div>
+    <!-- <script src="https://blog-static.cnblogs.com/files/jdWu-d/fish.js"></script> -->
+    <script src="./fish.js"></script>
+</body>
+
+</html>
